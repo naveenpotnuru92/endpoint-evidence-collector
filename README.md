@@ -39,6 +39,8 @@ locally. The app itself never contacts, controls or executes anything on an endp
 **Endpoints need nothing installed**: macOS/Linux use `bash`, `tar`, `gzip`, `awk`, `df`, `find`, `sed`, `shasum`/`sha256sum`
 (all standard). Windows uses built-in PowerShell 5.1+. No Python or Node on endpoints.
 
+**Check your Mac automatically:** `npm run doctor`. Per-OS endpoint requirements: [macOS](docs/REQUIREMENTS-macos.md) · [Windows](docs/REQUIREMENTS-windows.md).
+
 ### Files you need (and where they live)
 
 | Path | What it is | Needed at |
@@ -199,6 +201,7 @@ examples/plans/         Sample plans
 
 ## 8. Documentation index
 
+* [docs/REQUIREMENTS-macos.md](docs/REQUIREMENTS-macos.md) / [docs/REQUIREMENTS-windows.md](docs/REQUIREMENTS-windows.md) — what each OS needs
 * [docs/operator-guide.md](docs/operator-guide.md) — day-to-day use, footprint, interrupted runs, troubleshooting
 * [docs/support-matrix.md](docs/support-matrix.md) — per-OS / per-category coverage and verification state
 * [docs/threat-model.md](docs/threat-model.md) — assumptions, mitigations, residual risks

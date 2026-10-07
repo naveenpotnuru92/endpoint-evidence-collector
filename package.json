@@ -19,7 +19,8 @@
     "bundle": "tsx scripts/bundle.mts",
     "test:unit": "vitest run --exclude tests/e2e.test.ts --exclude tests/ui.e2e.test.ts",
     "test:e2e": "vitest run tests/e2e.test.ts tests/ui.e2e.test.ts",
-    "check": "npm run typecheck && npm test && npm run smoke"
+    "check": "npm run typecheck && npm test && npm run smoke",
+    "doctor": "tsx scripts/doctor.mts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
