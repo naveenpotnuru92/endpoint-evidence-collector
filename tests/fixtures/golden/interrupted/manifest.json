@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "runId": "run-20261007T000000Z-deadbeef",
+  "planId": "plan-0123456789ab",
+  "planDigest": "42fa695eb607508e7875c327874c84b2952b9745e712191668111835d20099ed",
+  "catalogVersion": "0.1.0",
+  "generatorVersion": "0.1.0",
+  "targetOs": "linux",
+  "host": {
+    "name": "synthetic-host",
+    "osVersion": "Synthetic OS 1.0",
+    "identity": "synthetic-user",
+    "elevated": false
+  },
+  "startedUtc": "2026-10-07T00:00:00Z",
+  "finishedUtc": "2026-10-07T00:00:05Z",
+  "entries": [
+    {
+      "artifactId": "synthetic.artifact",
+      "profile": null,
+      "sourcePath": "/synthetic/source/baseline/system.txt",
+      "destination": "baseline/system.txt",
+      "method": "copy",
+      "outcome": "collected",
+      "acquiredUtc": "2026-10-07T00:00:01Z",
+      "bytes": 19,
+      "sha256": "948dc3d9fdcf63692f20198ccbb9cfecc52a40793cb3b651c677c3a245cb68ce",
+      "error": null,
+      "skipReason": null,
+      "consistencyNote": null,
+      "timeFilterApplied": false
+    },
+    {
+      "artifactId": "synthetic.artifact",
+      "profile": null,
+      "sourcePath": "/synthetic/source/volatile/processes.txt",
+      "destination": "volatile/processes.txt",
+      "method": "copy",
+      "outcome": "collected",
+      "acquiredUtc": "2026-10-07T00:00:01Z",
+      "bytes": 20,
+      "sha256": "4f689736b981d541dedcdbf062817317215b0ddec71f115aedc4406ca3e26063",
+      "error": null,
+      "skipReason": null,
+      "consistencyNote": null,
+      "timeFilterApplied": false
+    }
+  ]
+}

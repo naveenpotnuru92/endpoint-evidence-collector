@@ -1,0 +1,33 @@
+{
+  "name": "endpoint-evidence-collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc -b packages/schema packages/catalog packages/generator packages/verifier && tsc -p apps/local-service --noEmit && npm -w apps/ui run typecheck",
+    "test": "vitest run",
+    "dev": "npm -w apps/ui run dev",
+    "build": "npm -w apps/ui run build",
+    "app": "npm run build && tsx apps/local-service/src/main.ts",
+    "start": "tsx apps/local-service/src/main.ts",
+    "smoke": "npm run build --silent && tsx scripts/smoke.mts",
+    "fixtures": "tsx scripts/make-golden.mts",
+    "bundle": "tsx scripts/bundle.mts",
+    "test:unit": "vitest run --exclude tests/e2e.test.ts --exclude tests/ui.e2e.test.ts",
+    "test:e2e": "vitest run tests/e2e.test.ts tests/ui.e2e.test.ts",
+    "check": "npm run typecheck && npm test && npm run smoke"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "axe-core": "^4.13.0",
+    "playwright-core": "^1.63.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0",
+    "esbuild": "^0.25.0"
+  }
+}

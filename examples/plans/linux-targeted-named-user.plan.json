@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.1.0",
+  "generatorVersion": "0.1.0",
+  "planId": "plan-cccccccccccc",
+  "createdAtUtc": "2026-10-07T00:00:00Z",
+  "targetOs": "linux",
+  "preset": "targeted",
+  "artifactIds": [
+    "lin.logs.auth",
+    "lin.scheduled.cron",
+    "lin.scheduled.timers"
+  ],
+  "userScope": {
+    "mode": "named",
+    "names": [
+      "exampleuser"
+    ]
+  },
+  "includeSystemProfiles": false,
+  "timeWindow": {
+    "mode": "range",
+    "days": null,
+    "startUtc": "2026-10-01T00:00:00Z",
+    "endUtc": "2026-10-07T00:00:00Z",
+    "displayTimezone": "UTC"
+  },
+  "outputRoot": "/var/tmp/eec-evidence",
+  "sizeLimits": {
+    "perFileBytes": 262144000,
+    "totalBytes": 2147483648,
+    "archivePartBytes": 262144000,
+    "freeSpaceReserveBytes": 536870912,
+    "maxArchiveParts": 64
+  },
+  "runtimeBudgetSeconds": 900,
+  "customPaths": [
+    "/etc/example.conf"
+  ],
+  "sensitiveSelections": [],
+  "executionMode": "foreground",
+  "caseLabel": "EXAMPLE targeted"
+}

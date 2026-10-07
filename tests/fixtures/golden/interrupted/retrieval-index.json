@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "runId": "run-20261007T000000Z-deadbeef",
+  "planId": "plan-0123456789ab",
+  "planDigest": "42fa695eb607508e7875c327874c84b2952b9745e712191668111835d20099ed",
+  "finalizationState": "cancelled",
+  "manifestName": "manifest.json",
+  "manifestSha256": "5b5d3930c3d425af6125337bdb7c385c3ab79b4701eb651d9aae16571d3865b8",
+  "expectedParts": [
+    {
+      "name": "part-001.tar.gz",
+      "bytes": 148,
+      "sha256": "4cf7bd0db61a9e3de5d264dc0ca8bf327ef73252f5ae039e1e834248423c41f5",
+      "members": 2
+    }
+  ],
+  "failedParts": []
+}

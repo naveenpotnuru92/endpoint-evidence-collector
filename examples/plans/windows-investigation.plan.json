@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.1.0",
+  "generatorVersion": "0.1.0",
+  "planId": "plan-bbbbbbbbbbbb",
+  "createdAtUtc": "2026-10-07T00:00:00Z",
+  "targetOs": "windows",
+  "preset": "investigation",
+  "artifactIds": [
+    "win.baseline.system",
+    "win.volatile.processes",
+    "win.volatile.network",
+    "win.logs.security",
+    "win.logs.system",
+    "win.logs.application",
+    "win.scheduled.tasks",
+    "win.persistence.services",
+    "win.persistence.startup",
+    "win.registry.autoruns",
+    "win.browser.chromium.history",
+    "win.browser.chromium.config",
+    "win.browser.firefox.history",
+    "win.browser.firefox.config"
+  ],
+  "userScope": {
+    "mode": "all-normal",
+    "names": []
+  },
+  "includeSystemProfiles": false,
+  "timeWindow": {
+    "mode": "last-days",
+    "days": 7,
+    "startUtc": null,
+    "endUtc": null,
+    "displayTimezone": "UTC"
+  },
+  "outputRoot": "C:\\IR\\Evidence",
+  "sizeLimits": {
+    "perFileBytes": 262144000,
+    "totalBytes": 2147483648,
+    "archivePartBytes": 262144000,
+    "freeSpaceReserveBytes": 536870912,
+    "maxArchiveParts": 64
+  },
+  "runtimeBudgetSeconds": 900,
+  "customPaths": [],
+  "sensitiveSelections": [],
+  "executionMode": "foreground",
+  "caseLabel": "EXAMPLE investigation (includes browser history = personal data)"
+}

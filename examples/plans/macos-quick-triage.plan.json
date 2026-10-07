@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.1.0",
+  "generatorVersion": "0.1.0",
+  "planId": "plan-aaaaaaaaaaaa",
+  "createdAtUtc": "2026-10-07T00:00:00Z",
+  "targetOs": "macos",
+  "preset": "quick-triage",
+  "artifactIds": [
+    "mac.baseline.system",
+    "mac.volatile.processes",
+    "mac.volatile.network",
+    "mac.logs.system",
+    "mac.scheduled.cron",
+    "mac.scheduled.launchd",
+    "mac.persistence.launchd"
+  ],
+  "userScope": {
+    "mode": "all-normal",
+    "names": []
+  },
+  "includeSystemProfiles": false,
+  "timeWindow": {
+    "mode": "last-days",
+    "days": 7,
+    "startUtc": null,
+    "endUtc": null,
+    "displayTimezone": "UTC"
+  },
+  "outputRoot": "/var/tmp/eec-evidence",
+  "sizeLimits": {
+    "perFileBytes": 262144000,
+    "totalBytes": 2147483648,
+    "archivePartBytes": 262144000,
+    "freeSpaceReserveBytes": 536870912,
+    "maxArchiveParts": 64
+  },
+  "runtimeBudgetSeconds": 900,
+  "customPaths": [],
+  "sensitiveSelections": [],
+  "executionMode": "foreground",
+  "caseLabel": "EXAMPLE quick triage"
+}
